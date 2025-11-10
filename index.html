@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aitys with AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+  body{background:#09091a;color:#fff;overflow-x:hidden;}
+
+  header{
+    position:fixed;
+    top:0;left:0;width:100%;
+    display:flex;justify-content:space-between;align-items:center;
+    background:rgba(9,9,26,0.9);
+    backdrop-filter:blur(8px);
+    padding:20px 60px;
+    z-index:1000;
+  }
+  .logo{
+    font-size:2.2em;
+    font-weight:700;
+    background:linear-gradient(45deg,#ffd700,#ff3f81);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  nav{
+    display:flex;
+    gap:35px;
+  }
+  nav a{
+    color:#fff;
+    font-weight:600;
+    font-size:1.1em;
+    transition:0.3s;
+  }
+  nav a:hover{color:#ffd700;}
+  .burger{display:none;flex-direction:column;gap:7px;cursor:pointer;}
+  .burger div{width:34px;height:4px;background:#fff;border-radius:4px;}
+
+  .hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10px;
+    background:linear-gradient(135deg,#111133,#09091a);
+  }
+  .hero h1{
+    font-size:4rem;
+    background:linear-gradient(90deg,#ffd700,#ff3f81);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  .hero p{
+    font-size:1.6em;
+    max-width:800px;
+    color:#ccc;
+    margin-top:20px;
+  }
+
+  section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:160px 10%;
+    flex-wrap:wrap;
+    gap:60px;
+  }
+  .text{
+    flex:1;
+    min-width:350px;
+  }
+  .text h2{
+    color:#ffd700;
+    font-size:2.5em;
+    margin-bottom:20px;
+  }
+  .text p,.text li{
+    font-size:1.4em;
+    line-height:1.7;
+    margin-bottom:15px;
+    color:#ddd;
+  }
+  ul,ol{padding-left:30px;}
+  .image{
+    flex:1;
+    text-align:center;
+  }
+  .image img{
+    width:100%;
+    max-width:520px;
+    border-radius:20px;
+    box-shadow:0 15px 50px rgba(255,215,0,0.25);
+    transition:0.4s;
+  }
+  .image img:hover{
+    transform:scale(1.03);
+    box-shadow:0 25px 60px rgba(255,215,0,0.4);
+  }
+
+  footer{
+    text-align:center;
+    padding:60px 20px;
+    background:#0b0b1a;
+    border-top:1px solid #222;
+    color:#aaa;
+    font-size:1.3em;
+  }
+
+  @media(max-width:900px){
+    header{padding:20px 30px;}
+    nav{display:none;flex-direction:column;position:absolute;top:90px;right:30px;background:#111133;padding:30px;border-radius:15px;}
+    nav.active{display:flex;}
+    .burger{display:flex;}
+    .hero h1{font-size:3rem;}
+    section{flex-direction:column;text-align:center;padding:100px 5%;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Aitys AI</div>
+  <nav>
+    <a href="#aitys">About</a>
+    <a href="#tech">Tech</a>
+    <a href="#work">AI Works</a>
+    <a href="#advantages">Advantages</a>
+    <a href="#examples">Examples</a>
+    <a href="#output">Conclusion</a>
+  </nav>
+  <div class="burger" id="burger"><div></div><div></div><div></div></div>
+</header>
+
+<section class="hero">
+  <h1>Aitys with Artificial Intelligence</h1>
+  <p>A new form of folk art where Kazakh tradition meets modern innovation.</p>
+</section>
+
+<section id="aitys">
+  <div class="text">
+    <h2>What is Aitys?</h2>
+    <ul>
+      <li>Traditional Kazakh oral folk art</li>
+      <li>Competition between two akyns improvising verses</li>
+      <li>Main themes: love, nature, society, humor</li>
+    </ul>
+  </div>
+  <div class="image">
+    <img src="https://avatars.mds.yandex.net/i?id=e536cc03cc73237d9a80e7eb7901ebc21990da93-5231983-images-thumbs&n=13" alt="Aitys scene">
+  </div>
+</section>
+
+<section id="tech">
+  <div class="text">
+    <h2>Aitys & Technologies</h2>
+    <p>Artificial intelligence brings new dimensions to the ancient art. AI can compose rhymes, improvise, and even interact with a live akyn in real-time, keeping Aitys alive in the digital age.</p>
+  </div>
+  <div class="image">
+    <img src="https://ccdn.toastmasters.org/medias/images/magazine/magazine-issues/2024/dec/06-ai-01.png" alt="AI art">
+  </div>
+</section>
+
+<section id="work">
+  <div class="text">
+    <h2>How AI Works</h2>
+    <ol>
+      <li>Trained on large poetry and text databases.</li>
+      <li>Generates rhymes and thematic lines.</li>
+      <li>Reacts to live akyns in real-time competitions.</li>
+    </ol>
+  </div>
+  <div class="image">
+    <img src="https://melsoftacademy.com/wp-content/uploads/2025/03/1123.jpg" alt="AI process">
+  </div>
+</section>
+
+<section id="advantages">
+  <div class="text">
+    <h2>Advantages</h2>
+    <ul>
+      <li>New creative possibilities.</li>
+      <li>Helps young akyns learn faster.</li>
+      <li>Fun for viewers and schools.</li>
+      <li>Preserves Kazakh traditions digitally.</li>
+    </ul>
+  </div>
+  <div class="image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkTmN1GhqApcbBuU6CuuHzbGuxQ5ZdxtdeUg&s"alt="Advantages">
+  </div>
+</section>
+
+<section id="examples">
+  <div class="text">
+    <h2>Examples</h2>
+    <ul>
+      <li>AI poem: “Nature and the City.”</li>
+      <li>Virtual akyn vs live akyn battle.</li>
+      <li>Interactive online Aitys performances.</li>
+    </ul>
+  </div>
+  <div class="image">
+    <img src="https://kartikmehtablog.com/wp-content/uploads/2024/01/AI-Examples-1024x640.jpg" alt="AI example">
+  </div>
+</section>
+
+<section id="output">
+  <div class="text">
+    <h2>Conclusion</h2>
+    <p>Aitys with AI is where tradition and technology merge. It’s engaging, educational, and inspiring — the future of Kazakh folk art in a digital form.</p>
+  </div>
+  <div class="image">
+    <img src="https://static.tildacdn.pro/tild6531-6634-4461-b137-336164393666/Artboard_14x.png" alt="Future of Aitys">
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Aitys AI </p>
+</footer>
+
+<script>
+const burger=document.getElementById('burger');
+const nav=document.querySelector('nav');
+burger.onclick=()=>nav.classList.toggle('active');
+</script>
+
+</body>
+</html>
